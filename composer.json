@@ -1,0 +1,10 @@
+{
+    "autoload": {
+      "psr-4": {
+        "Aruka\\": "src/"
+      }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    }
+}

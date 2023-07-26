@@ -1,0 +1,11 @@
+# Директория с настройками для IDE PhpStorm
+.idea
+
+# Файлы метаданных macOS
+.DS_Store
+
+# Директорию для Composer
+vendor
+
+# Файл фиксирует версии зависимостей для Composer
+composer.lock
