@@ -1,5 +1,7 @@
 <?php
 
+echo $_SERVER['REQUEST_URI'];
+exit;
 use Aruka\Core\App;
 
 // Подключает автозагрузчик
