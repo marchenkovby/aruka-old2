@@ -1,14 +1,43 @@
 {
-    "autoload": {
-      "psr-4": {
-        "Aruka\\": "src/"
-      }
-    },
-    "require": {
-      "php": ">=8.0"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "*",
-        "phpstan/phpstan": "^1.10"
+  "name": "marchenkovby/aruka",
+  "type": "project",
+  "description": "A PHP MVC framework written without any libraries and frameworks",
+  "keywords": [
+    "php",
+    "oop",
+    "mvc",
+    "mysql",
+    "pdo"
+  ],
+  "homepage": "https://aruka.marchenkov.by",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maksim Marchenkov",
+      "email": "marchenkovby@gmail.com",
+      "homepage": "https://marchenkov.by",
+      "role": "Developer"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/marchenkovby/aruka/issues",
+    "source": "https://github.com/marchenkov/aruka"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aruka\\": "src/",
+      "Aruka\\Core\\": "src/core/",
+      "Aruka\\App\\": "src/app/",
+      "Aruka\\App\\Controllers\\": "src/app/controllers/",
+      "Aruka\\App\\Views\\": "src/app/views/",
+      "Aruka\\App\\Models\\": "src/app/models/"
+    }
+  },
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*",
+    "squizlabs/php_codesniffer": "*"
+  }
 }

@@ -9,7 +9,7 @@ class Database
     private $host = DB_HOST;
     private $user = DB_USER;
     private $pass = DB_PASS;
-    private $dbname = DB_NAME;
+    private $dbName = DB_NAME;
 
     private $handler;
     private $error;
@@ -18,7 +18,7 @@ class Database
 
     public function __construct()
     {
-        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
+        $dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbName;
         $options = [
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
@@ -58,24 +58,18 @@ class Database
 
     public function execute()
     {
-        try {
-            return $this->statement->execute();
-        } catch (PDOException $e) {
-            $this->error = $e->getMessage();
-        }
+        $this->statement->execute();
     }
 
     public function result()
     {
         $this->execute();
-
         return $this->statement->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function resultset()
+    public function resultSet()
     {
         $this->execute();
-
         return $this->statement->fetchAll(PDO::FETCH_ASSOC);
     }
 

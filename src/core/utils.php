@@ -1,7 +1,7 @@
 <?php
 
 // Выводит различные массивы и другие переменные в удобном виде
-function debug($var): void
+function debug($var)
 {
     echo '<pre>', print_r($var, true), '</pre>', '<hr>';
 }

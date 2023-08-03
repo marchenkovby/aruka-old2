@@ -15,7 +15,7 @@ class App
     private function init(): void
     {
         // Подключает файл конфигурации
-        $fileBootstrap =  dirname(__DIR__) . '/core/bootstrap.php';
+        $fileBootstrap = dirname(__DIR__) . '/core/bootstrap.php';
         if (file_exists($fileBootstrap)) {
             require_once $fileBootstrap;
         }

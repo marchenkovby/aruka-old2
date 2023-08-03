@@ -14,13 +14,14 @@ class View
         $this->path = "{$folderController}/{$folderAction}";
     }
 
-    public function renderPage($data): void
+    public function render(array $data): void
     {
-        extract($data);
-        $path = VIEWS . "/{$this->path}.php";
-        if (file_exists($path)) {
+
+        $file = VIEWS . "/{$this->path}.php";
+        if (file_exists($file)) {
+            extract($data);
             ob_start();
-            require_once $path;
+            require_once $file;
             $content = ob_get_clean();
             require_once LAYOUTS . "/{$this->layout}.php";
         }

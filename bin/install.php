@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../config/credentials.php';
+require __DIR__ . '/../src/config/credentials.php';
 
 $options = [
     PDO::ATTR_PERSISTENT => true,

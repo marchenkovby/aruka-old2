@@ -2,7 +2,7 @@
 
 namespace Aruka\App\Models;
 
-use Aruka\Core\Model;
+use Aruka\core\Model;
 
 class Articles extends Model
 {

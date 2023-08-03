@@ -2,20 +2,20 @@
 
 namespace Aruka\App\Controllers;
 
-use Aruka\Core\Controller;
+use Aruka\core\Controller;
 
 class ArticlesController extends Controller
 {
     public function indexAction(): void
     {
-        $this->view->renderPage([
+        $this->view->render([
             'pageTitle' => 'Page with all articles',
         ]);
     }
 
     public function createAction(): void
     {
-        $this->view->renderPage([
+        $this->view->render([
             'pageTitle' => 'Create page',
         ]);
     }
@@ -24,7 +24,7 @@ class ArticlesController extends Controller
     {
         $pageId = (int) $this->paramsRoute['id'];
         $arrayArticle = $this->model->getArticleById($pageId);
-        $this->view->renderPage([
+        $this->view->render([
             'pageTitle' => 'Page with 1 article',
             'pageId' => $pageId,
             'article' => $arrayArticle,
@@ -33,7 +33,7 @@ class ArticlesController extends Controller
 
     public function editAction(): void
     {
-        $this->view->renderPage([
+        $this->view->render([
             'pageTitle' => 'Edit page with article',
         ]);
     }
@@ -41,25 +41,22 @@ class ArticlesController extends Controller
     public function updateAction(): void
     {
 
-        $this->view->renderPage([
+        $this->view->render([
             'pageTitle' => 'Update page with article',
         ]);
     }
 
     public function deleteAction(): void
     {
-        $this->view->renderPage([
+        $this->view->render([
             'pageTitle' => 'Delete page with article',
         ]);
     }
 
     public function apiAction(): void
     {
-        $this->view->renderApi([
+        $this->view->render([
             'pageTitle' => 'Page with API',
-            'version' => $this->paramsRoute['version'],
-            'method' => $this->paramsRoute['method'],
-            'article' => $this->model->getArticleById($this->paramsRoute['id']),
         ]);
     }
 }
