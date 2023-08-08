@@ -9,14 +9,13 @@ class View
 
     public function __construct(array $paramsRoute)
     {
-        $folderController = str_replace('Controller', '', $paramsRoute['controller']);
+        $folderController = lcfirst(str_replace('Controller', '', $paramsRoute['controller']));
         $folderAction = lcfirst(str_replace('Action', '', $paramsRoute['action']));
         $this->path = "{$folderController}/{$folderAction}";
     }
 
-    public function render(array $data): void
+    public function render(array $data = [], ?string $view = null): void
     {
-
         $file = VIEWS . "/{$this->path}.php";
         if (file_exists($file)) {
             extract($data);

@@ -1,6 +1,6 @@
 <?php
 
-use Aruka\core\App;
+use Aruka\Core\App;
 
 // Подключает автозагрузчик
 require_once dirname(__DIR__) . '/vendor/autoload.php';
