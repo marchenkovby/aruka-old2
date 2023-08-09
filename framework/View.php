@@ -1,6 +1,6 @@
 <?php
 
-namespace Aruka\Core;
+namespace Aruka;
 
 class View
 {

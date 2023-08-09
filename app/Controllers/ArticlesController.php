@@ -1,23 +1,28 @@
 <?php
 
-namespace Aruka\App\Controllers;
+namespace Aruka\Controllers;
 
-use Aruka\core\Controller;
+use Aruka\Controller;
 
 class ArticlesController extends Controller
 {
     public function indexAction(): void
     {
-        $this->view->render([
-            'pageTitle' => 'Page with all articles',
-        ]);
+        $this->view->render(
+            data: [
+                'pageTitle' => 'Page with all articles',
+            ],
+            view: 'index'
+        );
     }
 
     public function createAction(): void
     {
-        $this->view->render([
-            'pageTitle' => 'Create page',
-        ]);
+        $this->view->render(
+            ['pageTitle' => 'Create page',
+            ],
+            'create'
+        );
     }
 
     public function showAction(): void

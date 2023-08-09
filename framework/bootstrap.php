@@ -10,4 +10,4 @@ require_once CONFIG . '/routes.php';
 require_once CONFIG . '/credentials.php';
 
 // Подключает файл с функциями-помощниками
-require_once CORE . '/utils.php';
+require_once FRAMEWORK . '/utils.php';

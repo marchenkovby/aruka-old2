@@ -1,8 +1,8 @@
 <?php
 
-namespace Aruka\Core;
+namespace Aruka;
 
-use Aruka\App\Models\Articles;
+use Aruka\Models\Articles;
 
 abstract class Controller
 {

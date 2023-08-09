@@ -6,7 +6,7 @@
 
 declare(strict_types=1);
 
-namespace Aruka\Core;
+namespace Aruka\Routing;
 
 class Route
 {

@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Aruka\Core;
+namespace Aruka;
+
+use Aruka\Routing\Router;
 
 class App
 {
@@ -15,7 +17,7 @@ class App
     private function init(): void
     {
         // Подключает файл конфигурации
-        $fileBootstrap = dirname(__DIR__) . '/core/bootstrap.php';
+        $fileBootstrap = dirname(__DIR__) . '/framework/bootstrap.php';
         if (file_exists($fileBootstrap)) {
             require_once $fileBootstrap;
         }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Aruka\App\Controllers;
+namespace Aruka\Controllers;
 
-use Aruka\core\Controller;
+use Aruka\Controller;
 
 class MainController extends Controller
 {

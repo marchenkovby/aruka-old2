@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aruka\Core;
+namespace Aruka\Routing;
 
 use Exception;
 
@@ -65,7 +65,7 @@ class Router
     // Вызывает экшин контроллера
     private function callAction($controller, $action): void
     {
-        $controller = 'Aruka\\App\\Controllers\\' . $controller;
+        $controller = 'Aruka\\Controllers\\' . $controller;
         if (class_exists($controller)) {
             $controller = new $controller($this->params);
             if (method_exists($controller, $action)) {

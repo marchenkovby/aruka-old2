@@ -6,11 +6,13 @@ EXPOSE 80
 
 COPY . .
 
-RUN apt-get update && apt-get install -y git zip unzip && pecl install xdebug
+RUN apt-get update && \
+apt-get install -y git zip unzip && \
+pecl install xdebug
 
-RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install pdo_mysql #xdebug
 
-RUN docker-php-ext-enable pdo_mysql xdebug
+RUN docker-php-ext-enable pdo_mysql #xdebug
 
 RUN mv ${PHP_INI_DIR}/php.ini-development ${PHP_INI_DIR}/php.ini
 

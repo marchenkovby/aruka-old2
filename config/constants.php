@@ -4,16 +4,16 @@
 define('DEBUG', true);
 
 // Директория с файлами фреймворка
-define('ROOT', dirname(__DIR__) . '/..');
+define('ROOT', dirname(__DIR__));
 
 // Директория с файлами приложения
-define('APP', ROOT . '/src/app');
+define('APP', ROOT . '/app');
 
 // Директория с файлами ядра приложения
-define('CORE', ROOT . '/src/core');
+define('FRAMEWORK', ROOT . '/framework');
 
 // Директория с файлами конфигурации приложения
-define('CONFIG', ROOT . '/src/config');
+define('CONFIG', ROOT . '/config');
 
 // Директория с логами
 define('LOGS', ROOT . '/logs');
@@ -22,13 +22,13 @@ define('LOGS', ROOT . '/logs');
 define('TESTS', ROOT . '/tests');
 
 // Директория с контроллерами
-define('CONTROLLERS', APP . '/controllers');
+define('CONTROLLERS', APP . '/Controllers');
 
 // Директория с моделями
-define('MODELS', APP . '/models');
+define('MODELS', APP . '/Models');
 
 // Директория с представлениями
-define('VIEWS', APP . '/views');
+define('VIEWS', APP . '/Views');
 
 // Директория с шаблонами
 define('LAYOUTS', VIEWS . '/layouts');

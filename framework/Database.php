@@ -1,8 +1,8 @@
 <?php
 
-namespace Aruka\Core;
+namespace Aruka;
 
-use \PDO;
+use PDO;
 
 class Database
 {
@@ -10,10 +10,8 @@ class Database
     private $user = DB_USER;
     private $pass = DB_PASS;
     private $dbName = DB_NAME;
-
     private $handler;
     private $error;
-
     private $statement;
 
     public function __construct()

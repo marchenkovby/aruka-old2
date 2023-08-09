@@ -1,8 +1,8 @@
 <?php
 
-namespace Aruka\App\Models;
+namespace Aruka\Models;
 
-use Aruka\core\Model;
+use Aruka\Model;
 
 class Articles extends Model
 {

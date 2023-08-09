@@ -4,7 +4,7 @@
  * Файл с маршрутами
  */
 
-use Aruka\core\Route;
+use Aruka\Routing\Route;
 
 /**
  * Стандартные маршруты

@@ -25,16 +25,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Aruka\\": "src/",
-      "Aruka\\Core\\": "src/core/",
-      "Aruka\\App\\": "src/app/",
-      "Aruka\\App\\Controllers\\": "src/app/controllers/",
-      "Aruka\\App\\Views\\": "src/app/views/",
-      "Aruka\\App\\Models\\": "src/app/models/"
+      "Aruka\\": ["app/","framework/"]
     }
   },
   "require": {
-    "php": ">=8.0"
+    "php": ">=8.0",
+    "ext-pdo": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "*",
