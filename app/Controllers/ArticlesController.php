@@ -3,20 +3,16 @@
 namespace Aruka\Controllers;
 
 use Aruka\Controller;
+use Aruka\View;
 
 class ArticlesController extends Controller
 {
-    public function indexAction(): void
+    public function index(): View
     {
-        $this->view->render(
-            data: [
-                'pageTitle' => 'Page with all articles',
-            ],
-            view: 'index'
-        );
+        return View::make('articles/index');
     }
 
-    public function createAction(): void
+    public function create(): void
     {
         $this->view->render(
             ['pageTitle' => 'Create page',
@@ -25,7 +21,7 @@ class ArticlesController extends Controller
         );
     }
 
-    public function showAction(): void
+    public function show(): void
     {
         $pageId = (int) $this->paramsRoute['id'];
         $arrayArticle = $this->model->getArticleById($pageId);
@@ -36,14 +32,14 @@ class ArticlesController extends Controller
         ]);
     }
 
-    public function editAction(): void
+    public function edit(): void
     {
         $this->view->render([
             'pageTitle' => 'Edit page with article',
         ]);
     }
 
-    public function updateAction(): void
+    public function update(): void
     {
 
         $this->view->render([
@@ -51,14 +47,14 @@ class ArticlesController extends Controller
         ]);
     }
 
-    public function deleteAction(): void
+    public function delete(): void
     {
         $this->view->render([
             'pageTitle' => 'Delete page with article',
         ]);
     }
 
-    public function apiAction(): void
+    public function api(): void
     {
         $this->view->render([
             'pageTitle' => 'Page with API',

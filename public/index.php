@@ -6,5 +6,8 @@ use Aruka\App;
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 // Создает объект приложения
-new App();
+// new App();
 
+echo App::class;
+
+exit;

@@ -6,21 +6,21 @@ use Aruka\Controller;
 
 class MainController extends Controller
 {
-    public function indexAction(): void
+    public function index(): void
     {
         $this->view->render([
             'pageTitle' => 'Main page',
         ]);
     }
 
-    public function chatAction(): void
+    public function chat(): void
     {
         $this->view->render([
             'pageTitle' => 'Chat page',
         ]);
     }
 
-    public function aboutAction(): void
+    public function about(): void
     {
         $data = [
             'pageTitle' => 'About page',
