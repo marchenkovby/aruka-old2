@@ -20,7 +20,7 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DB: ${MYSQL_DB}
       TZ: ${TIMEZONE}
-      PHP_IDE_CONFIG: ${PHP_IDE_CONFIG}
+      #PHP_IDE_CONFIG: ${PHP_IDE_CONFIG}
     extra_hosts:
       - ${EXTRA_HOST_DOCKER}
   mysql:

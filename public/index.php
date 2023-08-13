@@ -1,10 +1,19 @@
 <?php
 
-xdebug_info();
+$var = 'Test'gitg;
+
+echo gettype($var), '<br>';
+
+var_dump($var);
+
 exit;
 
 use Aruka\App;
 use Aruka\Routing\Route;
+
+echo date(DATE_RSS);
+
+exit;
 
 // Подключает автозагрузчик
 require_once dirname(__DIR__) . '/vendor/autoload.php';
