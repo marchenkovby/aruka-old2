@@ -1,17 +1,14 @@
 <?php
 
-$var = 'Test'gitg;
 
-echo gettype($var), '<br>';
+echo 102;
 
-var_dump($var);
+echo 2;
 
 exit;
 
 use Aruka\App;
 use Aruka\Routing\Route;
-
-echo date(DATE_RSS);
 
 exit;
 
