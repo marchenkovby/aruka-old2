@@ -6,7 +6,7 @@ EXPOSE 80
 
 COPY . .
 
-RUN apt-get update && apt-get install -y git zip unzip
+RUN apt-get update && apt-get install -y git curl zip unzip
 
 RUN pecl install xdebug
 
