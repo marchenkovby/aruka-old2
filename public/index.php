@@ -1,10 +1,6 @@
 <?php
 
-$var = 'Test'gitg;
-
-echo gettype($var), '<br>';
-
-var_dump($var);
+echo 1;
 
 exit;
 
